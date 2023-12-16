@@ -17,6 +17,13 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+.location:hover {
+    text-decoration: underline;
+}
 /* Navigation Bar */
 .navBar{
     width: 100%;
@@ -36,14 +43,14 @@ h1, h2, h3, h4, h5, h6, p {
 li a {
    
     color: white;
-    padding: 24px 16px;
-    text-decoration: none;
+    padding: 22px 16px;
+   
   }
   
   
 li a:hover{
     background-color: black;
-    text-decoration: none;
+
 }
 .png{
     float: left;
@@ -83,9 +90,13 @@ li a:hover{
 }
 
 .location{
-    text-decoration: none;
     color: white;
-    padding: 10px;
+    padding-top: 10px;
+}
+
+.location a:visited {
+    text-decoration: none;
+    color:white;
 }
 .content{
   margin-top: 70px;
@@ -231,8 +242,8 @@ hr{
 .MenuRec{
     width: 90%;
     height: fit-content;
-    background-color: rgb(228, 227, 227);
-    margin: auto;
+    background-color: rgb(238, 234, 234);
+    margin: 0px auto 150px auto;
 
     
     display: grid;
@@ -270,12 +281,12 @@ hr{
 }
 
 .menutitle2{
-    color: rgb(185,209,92); 
+    color: rgb(133, 150, 66); 
     font-weight: 700;
     text-transform: uppercase;
-    padding-top: 70px;
+    padding-top: 45px;
     padding-left: 20px;
-    font-size: 20px;
+    font-size: 23px;
 }
 .menutitle1{
     color: rgb(230, 189, 85);
@@ -285,7 +296,15 @@ hr{
 }
 .descripItem{
     padding: 10px 20px;
+    font-size: 16px;
 }
+.descripItem2{
+    padding: 0px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    font-weight: 700;
+}
+
 .pricing{
     float: right;
     font-weight: 700;
@@ -298,15 +317,32 @@ hr{
 }
 .listIndents{
     text-indent: 70px;
-    margin: 5px;
+    margin: 8px; 
+    font-size: 14px;
+    font-weight: 300;
+    text-indent: 40px;    
 }
+
+.priceIndent{
+    font-weight: 700;
+    float: right ;
+    font-size: 15px;
+    
+}
+
+
+.line{
+     width: 90%;
+     float: right;
+}
+
 /* TAKE N' BAKE */
 .MakeGrid{
     display: inline-grid;
     grid-template-columns: 4fr 3fr;
     place-items: center;
     column-gap: 0px;
-    
+    margin-bottom: 200px;
 }
 .MakeRec{
     width: 60%;
@@ -318,12 +354,12 @@ hr{
     padding: 30px 0px;
 }
 .BakeRec{
-    width: 40%;
+    width: 45%;
     height: fit-content;
     color: white;
     background-color: rgb(230, 189, 85);
 }
 .BakeText{
-    margin: 20px;
-    padding: 20px 0px;
+    margin: 30px;
+    padding: 10px 0px;
 }
